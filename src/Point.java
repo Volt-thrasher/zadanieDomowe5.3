@@ -24,11 +24,11 @@ class Point {
     }
 
     boolean inThirdQuarter() {
-        return !inFirstQuarter();
+        return (x < 0 && y < 0);
     }
 
     boolean inFourthQuarter() {
-        return !inSecondQuarter();
+        return (x < 0 && y > 0);
     }
 
     boolean onOx() {
